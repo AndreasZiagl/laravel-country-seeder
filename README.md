@@ -9,7 +9,7 @@ Use this command to create a Country model with Seeder:
 
 2. Copy the table definitions from ```database/migrations/create_countries_table.php``` to your file.
 
-3. Copy the seeder from ```database/seeders/CountrySeeder.php``` to your file.
+3. Copy the seeder from ```database/seeders/CountrySeeder.php``` to your file. Don't forget to add a call to your DatabaseSeeder.php in the run() function             ```$this->call(CountrySeeder::class);```.
 
 4. Regenerate database
 Use this command ```php artisan migrate:fresh --seed```
